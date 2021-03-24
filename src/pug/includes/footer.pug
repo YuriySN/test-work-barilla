@@ -8,10 +8,15 @@ include ../mixins/bemto.pug
       +e.row
         +b.links
           +e.item
-            a.js-link-popup(data-url="./assets/popup/advertise.html") Advertise
+            a.js-link-popup(data-popup="adv") Advertise
           +e.item
-            a.js-link-popup(data-url="./assets/popup/regolamento.html") Regolamento
+            a.js-link-popup(data-popup="regolamento") Regolamento
           +e.item
-            a.js-link-popup(data-url="./assets/popup/privacy.html") Privacy
+            a.js-link-popup(data-popup="privacy") Privacy
           +e.item
-            a.js-link-popup(data-url="./assets/popup/contatto.html") Contatto
+            a.js-link-popup(data-popup="contatto") Contatto
+  +b.popups
+    include ../pages/popup/advertise
+    include ../pages/popup/contatto
+    include ../pages/popup/privacy
+    include ../pages/popup/regolamento

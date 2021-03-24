@@ -28,15 +28,15 @@
   // animation-duration: 0.2s;
   border: 1px solid #888;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  &--first {
-    padding: 0;
-    border: none;
-  }
-  &--first &__content {
-    img {
-      display: block;
-    }
-  }
+  // &--first {
+  //   padding: 0;
+  //   border: none;
+  // }
+  // &--first &__content {
+  //   img {
+  //     display: block;
+  //   }
+  // }
   &__close {
     position: absolute;
     right: 0;
@@ -55,7 +55,12 @@
     height: 100%;
     text-align: center;
   }
-  
+  h1 {
+    font-family: 'Verdanda';
+  }
+  h3 {
+    font-family: 'Verdanda';
+  }
   h2 {
     font-family: 'Verdanda';
     font-size: 1.2em;
