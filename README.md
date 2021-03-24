@@ -1,2 +1,7 @@
+test work HolyAff by AP Digital
 
-# test-work-barilla
+Запуск - npm install 
+       - npm run dev 
+или - yarn 
+    - yarn dev
+
