@@ -5,7 +5,7 @@ let validateForm =  function() {
   const formFields = [...document.querySelectorAll('input, select, textarea')]
   const radioBtn = [...document.querySelectorAll('input[type=radio]')]
 
-  // let formData = {}
+
 
   form.setAttribute('novalidate', true);
 
@@ -14,7 +14,7 @@ let validateForm =  function() {
     validateField(formFields)
     validateGroup('gender')
 
-    // console.log(formData)
+
   });
 
   form.addEventListener('keyup', function(ev) {
@@ -39,7 +39,7 @@ let validateForm =  function() {
         if(validator.isEmail(el.value)) {
           el.classList.remove('error')
           document.querySelector('.error-message[data-error-msg="email"]').innerHTML = ''
-          // formData[attrName] = el.value
+ 
         } else {
           el.classList.add('error')
           document.querySelector('.error-message[data-error-msg="email"]').innerHTML = 'completa correttamente il campo: email'
@@ -49,7 +49,7 @@ let validateForm =  function() {
         if(!validator.isEmpty(el.value)) {
           el.classList.remove('error')
           document.querySelector('.error-message[data-error-msg="firstname"]').innerHTML = ''
-          // formData[attrName] = el.value
+     
         } else {
           el.classList.add('error')
           document.querySelector('.error-message[data-error-msg="firstname"]').innerHTML = 'completa correttamente il campo: nome'
@@ -60,7 +60,7 @@ let validateForm =  function() {
         if(!validator.isEmpty(el.value)) {
           el.classList.remove('error')
           document.querySelector('.error-message[data-error-msg="lastname"]').innerHTML = ''
-          // formData[attrName] = el.value
+   
         } else {
           el.classList.add('error')
           document.querySelector('.error-message[data-error-msg="lastname"]').innerHTML = 'completa correttamente il campo: cognome'
@@ -71,7 +71,7 @@ let validateForm =  function() {
         if(validator.isInt(el.value, { min: 1, max: 31 })) {
           el.classList.remove('error')
           document.querySelector('.error-message[data-error-msg="dayofbirth"]').innerHTML = ''
-          // formData[attrName] = el.value
+  
         } else {
           el.classList.add('error')
           document.querySelector('.error-message[data-error-msg="dayofbirth"]').innerHTML = 'I minori di 18 anni non possono participare!'
@@ -82,7 +82,7 @@ let validateForm =  function() {
         if(validator.isInt(el.value, { min: 1, max: 12 })) {
           el.classList.remove('error')
           document.querySelector('.error-message[data-error-msg="dayofbirth"]').innerHTML = ''
-          // formData[attrName] = el.value
+     
         } else {
           el.classList.add('error')
           document.querySelector('.error-message[data-error-msg="dayofbirth"]').innerHTML = 'I minori di 18 anni non possono participare!'
@@ -93,7 +93,7 @@ let validateForm =  function() {
         if(validator.isInt(el.value, { min: 1900, max: 2003 })) {
           el.classList.remove('error')
           document.querySelector('.error-message[data-error-msg="dayofbirth"]').innerHTML = ''
-          // formData[attrName] = el.value
+ 
         } else {
           el.classList.add('error')
           document.querySelector('.error-message[data-error-msg="dayofbirth"]').innerHTML = 'I minori di 18 anni non possono participare!'
