@@ -1,9 +1,9 @@
 function modal() {
   const modalBtn = [...document.querySelectorAll('.js-link-popup')]
   const modalWrapper = document.querySelector('.js-popup')
-  modalWrapper.innerHTML = ''
 
   setTimeout(() => {
+    modalWrapper.innerHTML = ''
     const firtSlideURL = './assets/popup/first-slide.html'
     getModalContent(firtSlideURL)
     modalWrapper.classList.add('is-active')
@@ -18,7 +18,7 @@ function modal() {
 
   modalBtn.forEach(function (element) {
     element.addEventListener('click', function(event) {
-
+      modalWrapper.innerHTML = ''
       getModalContent(event.target.dataset.url)
       modalWrapper.classList.add('is-active')
 
