@@ -12,7 +12,7 @@ function modal() {
     document.addEventListener('click', e => {
       if (e.target.classList.contains('js-close-popup')) {
         modalWrapper.classList.remove('is-active')
-        // modalWrapper.innerHTML = ''
+        modalWrapper.innerHTML = ''
       }
     })
   }, 1500)
@@ -26,7 +26,7 @@ function modal() {
       document.addEventListener('click', e => {
         if (e.target.classList.contains('js-close-popup')) {
           modalWrapper.classList.remove('is-active')
-          // modalWrapper.innerHTML = ''
+          modalWrapper.innerHTML = ''
         }
      })
     })
@@ -38,7 +38,6 @@ function modal() {
         return response.text();
       })
       .then((data) => {
-        modalWrapper.innerHTML = ''
         modalWrapper.innerHTML = data
       });
   }
