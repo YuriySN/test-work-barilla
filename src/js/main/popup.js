@@ -1,7 +1,7 @@
 function modal() {
   const modalBtn = [...document.querySelectorAll('.js-link-popup')]
   const modalWrapper = document.querySelector('.js-popup')
-
+  modalWrapper.innerHTML = ''
 
   setTimeout(() => {
     const firtSlideURL = './assets/popup/first-slide.html'
