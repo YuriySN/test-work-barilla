@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="assets/img/favicon.png">
+    <title>Barilla</title>
+    <link href="assets/css/main.css" rel="stylesheet">
+  </head>
+
+  <body style="background-image: url(assets/img/bg-barilla.jpg)">
+    <main class="main" role="main">
+      <div class="container">
+        <section class="raffle block-design">
+          <header class="raffle__title title">
+            <h1>Vinci una fornitura<br>di pasta Barilla gratis per un anno!</h1>
+          </header>
+          <div class="raffle__content">
+            <div class="raffle__img animation"><img src="assets/img/img-barilla.png" alt="">
+            </div>
+            <form class="form" name="raffle">
+              <h2 class="form__title">Dove possiamo inviare il possibile premio?
+              </h2>
+              <div class="form__row">
+                <div class="error-message" data-error-msg="gender">
+                </div>
+                <div class="form__control form__control--50"><input class="form__input-radio" type="radio" id="gender-male" name="gender" value="male" />
+                  <label class="form__label-radio" for="gender-male">Uomo
+                  </label>
+                </div>
+                <div class="form__control form__control--50"><input class="form__input-radio" type="radio" id="gender-female" name="gender" value="female" />
+                  <label class="form__label-radio" for="gender-female">Donna
+                  </label>
+                </div>
+              </div>
+              <div class="form__control form__control--50"><input class="form__input-text test" type="text" id="firstname" name="firstname" placeholder=" " />
+                <label class="form__label-text" for="firstname">Nome
+                </label>
+                <div class="error-message" data-error-msg="firstname">
+                </div>
+              </div>
+              <div class="form__control form__control--50"><input class="form__input-text" type="text" id="lastname" name="lastname" placeholder=" " />
+                <label class="form__label-text" for="lastname">Cognome
+                </label>
+                <div class="error-message" data-error-msg="lastname">
+                </div>
+              </div>
+              <div class="form__control form__control--100"><input class="form__input-email" type="email" id="email" name="email" placeholder=" " />
+                <label class="form__label-email" for="email">Email
+                </label>
+                <div class="error-message" data-error-msg="email">
+                </div>
+              </div>
+              <div class="form__control form__control--100 form__control--mb0">
+                <div class="form__subtitle">Data di nascita
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="form__control form__control--33"><input class="form__input-number" type="number" id="dayofbirth" name="dayofbirth" placeholder=" " />
+                  <label class="form__label-number" for="dayofbirth">Giorno
+                  </label>
+                </div>
+                <div class="form__control form__control--33"><input class="form__input-number" type="number" id="monthofbirth" name="monthofbirth" placeholder=" " />
+                  <label class="form__label-number" for="monthofbirth">Mese
+                  </label>
+                </div>
+                <div class="form__control form__control--33"><input class="form__input-number" type="number" id="yearofbirth" name="yearofbirth" placeholder=" " />
+                  <label class="form__label-number" for="yearofbirth">Anno
+                  </label>
+                </div>
+                <div class="error-message error-message--margin" data-error-msg="dayofbirth">
+                </div>
+              </div>
+              <div class="form__control form__control--100">
+                <button class="btn" type="submit"><span class="blinker">PARTECIPAZIONE 100% GRATUITA</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__content block-design">
+          <div class="footer__description">
+            <p>Giorno Unico 2021 - Partecipazione gratuita. CONCORSO A PREMI con periodo di partecipazione dal 27 novembre 2020 al 14 novembre 2021. REALIZZATO IN CONFORMITÀ CON QUANTO PREVISTO DAL DPR 430/2001 - L'estrazione è garantita da Naturvel PTE LTD. Solo gli utenti che compilano interamente e correttamente il modulo partecipano all'estrazione. Premio: un buono Idea Shopping del valore di 1000 euro iva esclusa - montepremi complessivo del concorso è pari a 1000 Euro iva esclusa. In alternativa al buono IdeaShopping, l’utente vincitore può scegliere di ricevere un voucher di una compagnia aerea o ferroviaria selezionata dal Promotore.</p>
+          </div>
+          <div class="footer__row">
+            <div class="links">
+              <div class="links__item"><a class="js-link-popup" data-url="./assets/popup/advertise.html">Advertise</a>
+              </div>
+              <div class="links__item"><a class="js-link-popup" data-url="./assets/popup/regolamento.html">Regolamento</a>
+              </div>
+              <div class="links__item"><a class="js-link-popup" data-url="./assets/popup/privacy.html">Privacy</a>
+              </div>
+              <div class="links__item"><a class="js-link-popup" data-url="./assets/popup/contatto.html">Contatto</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="js-popup"></div>
+    <script defer src="assets/js/vendors.js"></script>
+    <script defer src="assets/js/main.js"></script>
+  </body>
+
+</html>
