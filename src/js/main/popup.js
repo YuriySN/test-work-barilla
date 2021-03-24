@@ -11,24 +11,21 @@ function modal() {
     document.addEventListener('click', e => {
       if (e.target.classList.contains('js-close-popup')) {
         modalWrapper.classList.remove('is-active')
+        modalWrapper.innerHTML = ''
       }
     })
   }, 1500)
 
-
   modalBtn.forEach(function (element) {
     element.addEventListener('click', function(event) {
-    
+
       getModalContent(event.target.dataset.url)
       modalWrapper.classList.add('is-active')
 
-
-
       document.addEventListener('click', e => {
         if (e.target.classList.contains('js-close-popup')) {
-   
           modalWrapper.classList.remove('is-active')
-    
+          modalWrapper.innerHTML = ''
         }
      })
     })
@@ -44,6 +41,5 @@ function modal() {
       });
   }
 }
-
 
 modal()
