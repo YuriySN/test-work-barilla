@@ -1,9 +1,10 @@
 function modal() {
   const modalBtn = [...document.querySelectorAll('.js-link-popup')]
   const modalWrapper = document.querySelector('.js-popup')
+  modalWrapper.innerHTML = ''
 
   setTimeout(() => {
-    modalWrapper.innerHTML = ''
+    // modalWrapper.innerHTML = ''
     const firtSlideURL = './assets/popup/first-slide.html'
     getModalContent(firtSlideURL)
     modalWrapper.classList.add('is-active')
@@ -11,21 +12,21 @@ function modal() {
     document.addEventListener('click', e => {
       if (e.target.classList.contains('js-close-popup')) {
         modalWrapper.classList.remove('is-active')
-        modalWrapper.innerHTML = ''
+        // modalWrapper.innerHTML = ''
       }
     })
   }, 1500)
 
   modalBtn.forEach(function (element) {
     element.addEventListener('click', function(event) {
-      modalWrapper.innerHTML = ''
+      // modalWrapper.innerHTML = ''
       getModalContent(event.target.dataset.url)
       modalWrapper.classList.add('is-active')
 
       document.addEventListener('click', e => {
         if (e.target.classList.contains('js-close-popup')) {
           modalWrapper.classList.remove('is-active')
-          modalWrapper.innerHTML = ''
+          // modalWrapper.innerHTML = ''
         }
      })
     })
@@ -37,6 +38,7 @@ function modal() {
         return response.text();
       })
       .then((data) => {
+        modalWrapper.innerHTML = ''
         modalWrapper.innerHTML = data
       });
   }
